@@ -18,7 +18,9 @@ Wire Transfer is a Golang project where customers can:
 
 [golang](https://go.dev/dl/go1.19.darwin-amd64.pkg) to install golang and check for go version.
 
-[html](https://html.com/) for html documentation
+[gorilla mux](https://github.com/gorilla/mux) to install gorilla mux.
+
+[postman](https://www.postman.com/downloads/) to install postman
 
 ```bash
 go version
