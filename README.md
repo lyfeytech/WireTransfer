@@ -20,7 +20,7 @@ Wire Transfer is a Golang project where customers can:
 
 [gorilla mux](https://github.com/gorilla/mux) to install gorilla mux.
 
-[postman](https://www.postman.com/downloads/) to install postman
+[postman](https://www.postman.com/downloads/) to install postman.
 
 ```bash
 go version
