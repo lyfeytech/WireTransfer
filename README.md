@@ -57,8 +57,11 @@ func updateAccount(w http.ResponseWriter, r *http.Request)
 # main router
 r := mux.NewRouter()
 
-	accounts = append(accounts, Account{CustomerID: "2021194v", SWIFT: "JD21-0676", Balance: 8889, Account_Holder: &Account_Holder{Firstname: "Chealyfey", Lastname: "Vutha", Address: "Singapore"}})
-	accounts = append(accounts, Account{CustomerID: "2021074v", SWIFT: "JD21-0677", Balance: 2300, Account_Holder: &Account_Holder{Firstname: "David", Lastname: "Vicheth", Address: "Malaysia"}})
+	accounts = append(accounts, Account{CustomerID: "2021194v", SWIFT: "JD21-0676", 
+	Balance: 8889, Account_Holder: &Account_Holder{Firstname: "Chealyfey", Lastname: "Vutha", Address: "Singapore"}})
+	accounts = append(accounts, Account{CustomerID: "2021074v", SWIFT: "JD21-0677", 
+	Balance: 2300, Account_Holder: &Account_Holder{Firstname: "David", Lastname: "Vicheth", Address: "Malaysia"}})
+	
 	r.HandleFunc("/accounts", getAccounts).Methods("GET")
 	r.HandleFunc("/accounts/{customerid}", getAccount).Methods("GET")
 	r.HandleFunc("/accounts", createAccount).Methods("POST")
