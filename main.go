@@ -86,7 +86,7 @@ func main() {
 		Account_Holder: &Account_Holder{Firstname: "Chealyfey", Lastname: "Vutha", Address: "Singapore"}})
 	accounts = append(accounts, Account{CustomerID: "2021074v", SWIFT: "JD21-0677", Balance: 2300, 
 		Account_Holder: &Account_Holder{Firstname: "David", Lastname: "Vicheth", Address: "Malaysia"}})
-	accounts = append(accounts, Account{CustomerID: "2021093t", SWIFT: "JDXX-0000", Balance: 6942, 
+	accounts = append(accounts, Account{CustomerID: "2021093t", SWIFT: "JDXX-0000", Balance: 1110, 
 		Account_Holder: &Account_Holder{Firstname: "Vesal", Lastname: "Thong", Address: "Cambodia"}})
 	
 	r.HandleFunc("/accounts", getAccounts).Methods("GET")
